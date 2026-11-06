@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b10">
+  <title>THE MYSTERY ROOM</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<div class="app">
+
+  <header class="navbar">
+    <a class="logo" href="#home">T<span>MR</span><small>THE MYSTERY ROOM</small></a>
+
+    <nav id="nav">
+      <a href="#home" data-en="Home" data-ar="الرئيسية">Home</a>
+      <a href="#cases" data-en="Police Cases" data-ar="القضايا البوليسية">Police Cases</a>
+      <a href="#riddles" data-en="Riddles" data-ar="الألغاز">Riddles</a>
+      <a href="#archive" data-en="Secret Archive" data-ar="الأرشيف السري">Secret Archive</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="langBtn" class="outline-btn" type="button">العربية</button>
+      <button id="menuBtn" class="menu-btn" type="button" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="tag"
+          data-en="POLICE INVESTIGATION DEPARTMENT"
+          data-ar="قسم التحقيقات البوليسية">
+          POLICE INVESTIGATION DEPARTMENT
+        </div>
+
+        <h1 data-en="EVERY DETAIL<br><span>MATTERS.</span>"
+            data-ar="كل تفصيل<br><span>مهم.</span>">
+          EVERY DETAIL<br><span>MATTERS.</span>
+        </h1>
+
+        <p
+          data-en="Examine crime scenes, compare witness statements, review official records and solve fictional police investigations."
+          data-ar="افحص مسرح القضية، قارن أقوال الشهود، راجع السجلات الرسمية وحل قضايا بوليسية خيالية.">
+          Examine crime scenes, compare witness statements, review official records and solve fictional police investigations.
+        </p>
+
+        <a class="main-btn" href="#cases"
+          data-en="VIEW CASE FILES →"
+          data-ar="شاهد ملفات القضايا ←">
+          VIEW CASE FILES →
+        </a>
+      </div>
+
+      <div class="hero-stamp">
+        <strong>TMR</strong>
+        <span>CASE UNIT</span>
+        <small>EST. 2026</small>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="stats">
+      <div>
+        <strong id="score">0</strong>
+        <span data-en="POINTS" data-ar="النقاط">POINTS</span>
+      </div>
+      <div>
+        <strong id="solved">0</strong>
+        <span data-en="CASES SOLVED" data-ar="القضايا المحلولة">CASES SOLVED</span>
+      </div>
+      <div>
+        <strong id="level">01</strong>
+        <span data-en="DETECTIVE LEVEL" data-ar="مستوى المحقق">DETECTIVE LEVEL</span>
+      </div>
+    </section>
+
+    <!-- POLICE CASES -->
+    <section class="section" id="cases">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow"
+            data-en="POLICE DEPARTMENT / CASE UNIT"
+            data-ar="قسم الشرطة / وحدة القضايا">
+            POLICE DEPARTMENT / CASE UNIT
+          </span>
+          <h2 data-en="Official Case Files" data-ar="ملفات القضايا الرسمية">
+            Official Case Files
+          </h2>
+        </div>
+        <span class="case-count">03 OPEN FILES</span>
+      </div>
+
+      <div class="case-grid">
+
+        <article class="case-card">
+          <div class="case-image image-one">
+            <span>CASE TMR-001</span>
+          </div>
+          <div class="case-info">
+            <span class="case-status"><i></i><span data-en="OPEN CASE" data-ar="قضية مفتوحة">OPEN CASE</span></span>
+            <h3 data-en="The Missing Compass" data-ar="البوصلة المفقودة">The Missing Compass</h3>
+            <p
+              data-en="An antique compass disappeared from a museum. Access records and witness statements do not fully match."
+              data-ar="اختفت بوصلة أثرية من متحف. سجلات الدخول وأقوال الشهود لا تتطابق تماماً.">
+              An antique compass disappeared from a museum. Access records and witness statements do not fully match.
+            </p>
+            <button class="case-btn" data-case="compass" type="button"
+              data-en="OPEN POLICE FILE →" data-ar="افتح ملف الشرطة ←">
+              OPEN POLICE FILE →
+            </button>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image image-two">
+            <span>CASE TMR-002</span>
+          </div>
+          <div class="case-info">
+            <span class="case-status"><i></i><span data-en="OPEN CASE" data-ar="قضية مفتوحة">OPEN CASE</span></span>
+            <h3 data-en="The Archive Report" data-ar="تقرير الأرشيف">The Archive Report</h3>
+            <p
+              data-en="A confidential report disappeared from a records room. The visitor log may reveal an important contradiction."
+              data-ar="اختفى تقرير سري من غرفة السجلات. قد يكشف سجل الزوار تناقضاً مهماً.">
+              A confidential report disappeared from a records room. The visitor log may reveal an important contradiction.
+            </p>
+            <button class="case-btn" data-case="archive" type="button"
+              data-en="OPEN POLICE FILE →" data-ar="افتح ملف الشرطة ←">
+              OPEN POLICE FILE →
+            </button>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image image-three">
+            <span>CASE TMR-003</span>
+          </div>
+          <div class="case-info">
+            <span class="case-status"><i></i><span data-en="OPEN CASE" data-ar="قضية مفتوحة">OPEN CASE</span></span>
+            <h3 data-en="The Studio Camera" data-ar="كاميرا الاستوديو">The Studio Camera</h3>
+            <p
+              data-en="A professional camera went missing. Review the equipment register and recorded movements."
+              data-ar="اختفت كاميرا احترافية. راجع سجل المعدات وحركات الدخول المسجلة.">
+              A professional camera went missing. Review the equipment register and recorded movements.
+            </p>
+            <button class="case-btn" data-case="studio" type="button"
+              data-en="OPEN POLICE FILE →" data-ar="افتح ملف الشرطة ←">
+              OPEN POLICE FILE →
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- INVESTIGATION PANEL -->
+      <section class="investigation-panel hidden" id="investigationPanel">
+        <div class="file-header">
+          <div>
+            <span class="eyebrow"
+              data-en="CONFIDENTIAL POLICE DOCUMENT"
+              data-ar="وثيقة بوليسية سرية">
+              CONFIDENTIAL POLICE DOCUMENT
+            </span>
+            <h2 id="investigationTitle"></h2>
+            <p id="investigationId"></p>
+          </div>
+          <button class="close-investigation" id="closeInvestigation" type="button">✕</button>
+        </div>
+
+        <div class="file-stamp-row">
+          <span><i class="status-dot"></i> <b data-en="STATUS:" data-ar="الحالة:">STATUS:</b> <span data-en="UNDER INVESTIGATION" data-ar="قيد التحقيق">UNDER INVESTIGATION</span></span>
+          <span><b data-en="DEPARTMENT:" data-ar="القسم:">DEPARTMENT:</b> TMR CASE UNIT</span>
+          <span><b data-en="CLASSIFICATION:" data-ar="التصنيف:">CLASSIFICATION:</b> <span data-en="FICTIONAL CASE" data-ar="قضية خيالية">FICTIONAL CASE</span></span>
+        </div>
+
+        <div class="report-section">
+          <span class="section-label" data-en="01 — INITIAL POLICE REPORT" data-ar="01 — تقرير الشرطة الأولي">
+            01 — INITIAL POLICE REPORT
+          </span>
+          <p id="caseStory"></p>
+        </div>
+
+        <div class="report-section">
+          <span class="section-label" data-en="02 — CRIME SCENE OBSERVATIONS" data-ar="02 — ملاحظات مسرح القضية">
+            02 — CRIME SCENE OBSERVATIONS
+          </span>
+          <div id="sceneDetails" class="scene-grid"></div>
+        </div>
+
+        <div class="report-columns">
+          <div class="report-section">
+            <span class="section-label" data-en="03 — OFFICIAL TIMELINE" data-ar="03 — التسلسل الزمني الرسمي">
+              03 — OFFICIAL TIMELINE
+            </span>
+            <div id="timelineList" class="timeline-list"></div>
+          </div>
+
+          <div class="report-section">
+            <span class="section-label" data-en="04 — EVIDENCE REGISTER" data-ar="04 — سجل الأدلة">
+              04 — EVIDENCE REGISTER
+            </span>
+            <div id="evidenceList" class="evidence-list"></div>
+          </div>
+        </div>
+
+        <div class="report-section">
+          <span class="section-label" data-en="05 — CCTV & RECORDS REVIEW" data-ar="05 — مراجعة الكاميرات والسجلات">
+            05 — CCTV & RECORDS REVIEW
+          </span>
+          <div id="recordsList" class="records-list"></div>
+        </div>
+
+        <div class="report-section">
+          <span class="section-label" data-en="06 — WITNESS INTERVIEWS" data-ar="06 — استجواب الشهود">
+            06 — WITNESS INTERVIEWS
+          </span>
+          <div id="suspectList" class="suspect-grid"></div>
+        </div>
+
+        <div class="decision-section">
+          <span class="section-label" data-en="07 — DETECTIVE'S ASSESSMENT" data-ar="07 — تقييم المحقق">
+            07 — DETECTIVE'S ASSESSMENT
+          </span>
+          <h3 id="caseQuestion"></h3>
+          <p
+            data-en="Compare the statements with the official records. Choose the person whose account requires further investigation."
+            data-ar="قارن التصريحات بالسجلات الرسمية. اختر الشخص الذي يحتاج تصريحه إلى مزيد من التحقيق.">
+            Compare the statements with the official records. Choose the person whose account requires further investigation.
+          </p>
+          <div id="caseOptions" class="answers"></div>
+          <div id="caseFeedback" class="feedback" aria-live="polite"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- RIDDLES -->
+    <section class="section riddles-section" id="riddles">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow" data-en="DETECTIVE TRAINING" data-ar="تدريب المحققين">
+            DETECTIVE TRAINING
+          </span>
+          <h2 data-en="Logic & Mystery Riddles" data-ar="ألغاز المنطق والغموض">
+            Logic & Mystery Riddles
+          </h2>
+        </div>
+      </div>
+
+      <div class="riddle-box">
+        <div class="riddle-top">
+          <span data-en="DETECTIVE CHALLENGE" data-ar="تحدي المحقق">DETECTIVE CHALLENGE</span>
+          <span id="riddleNumber">01 / 05</span>
+        </div>
+
+        <h3 id="question"></h3>
+        <div id="answers" class="answers"></div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+
+        <div class="riddle-footer">
+          <button id="hintBtn" class="outline-btn" type="button"
+            data-en="SHOW HINT" data-ar="أظهر التلميح">
+            SHOW HINT
+          </button>
+          <button id="nextBtn" class="main-btn" type="button" disabled
+            data-en="NEXT RIDDLE →" data-ar="اللغز التالي ←">
+            NEXT RIDDLE →
+          </button>
+        </div>
+
+        <p id="hintText" class="hint-text"></p>
+      </div>
+    </section>
+
+    <!-- SECRET ARCHIVE -->
+    <section class="section vault-section" id="archive">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow" data-en="RESTRICTED ACCESS" data-ar="دخول محدود">
+            RESTRICTED ACCESS
+          </span>
+          <h2 data-en="Secret Archive" data-ar="الأرشيف السري">Secret Archive</h2>
+        </div>
+        <span class="case-count" data-en="AUTHORIZED ACCESS ONLY" data-ar="للمصرح لهم فقط">
+          AUTHORIZED ACCESS ONLY
+        </span>
+      </div>
+
+      <div class="vault-access">
+        <div class="vault-icon">🔐</div>
+        <h3 data-en="ARCHIVE TERMINAL" data-ar="بوابة الأرشيف">ARCHIVE TERMINAL</h3>
+        <p
+          data-en="Enter the access code to reveal all riddles, their correct answers and explanations."
+          data-ar="أدخل رمز الدخول لإظهار جميع الألغاز والأجوبة الصحيحة والشروحات.">
+          Enter the access code to reveal all riddles, their correct answers and explanations.
+        </p>
+
+        <form id="archiveForm">
+          <input
+            id="archivePin"
+            type="password"
+            maxlength="4"
+            placeholder="ENTER ACCESS CODE"
+            inputmode="numeric"
+            autocomplete="off"
+            aria-label="Access code"
+          >
+          <button class="main-btn" type="submit"
+            data-en="UNLOCK ARCHIVE" data-ar="فتح الأرشيف">
+            UNLOCK ARCHIVE
+          </button>
+        </form>
+
+        <p id="archiveFeedback" class="feedback" aria-live="polite"></p>
+      </div>
+
+      <div id="archiveContent" class="vault-grid"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section">
+      <span class="eyebrow" data-en="THINK LIKE A DETECTIVE" data-ar="فكر مثل المحقق">
+        THINK LIKE A DETECTIVE
+      </span>
+      <h2 data-en="Observe. Compare. Conclude." data-ar="لاحظ. قارن. استنتج.">
+        Observe. Compare. Conclude.
+      </h2>
+      <p
+        data-en="THE MYSTERY ROOM is a fictional police investigation experience. All cases, people and records are invented for entertainment and logic training."
+        data-ar="THE MYSTERY ROOM تجربة تحقيق بوليسية خيالية. جميع القضايا والأشخاص والسجلات مختلقة للترفيه والتدريب على التفكير المنطقي.">
+        THE MYSTERY ROOM is a fictional police investigation experience. All cases, people and records are invented for entertainment and logic training.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a class="logo" href="#home">T<span>MR</span><small>THE MYSTERY ROOM</small></a>
+    <p>© 2026 THE MYSTERY ROOM</p>
+    <span class="footer-credit">CREATED BY OTHMAN LAMMALLAH</span>
+  </footer>
+
+</div>
+</body>
+</html>
